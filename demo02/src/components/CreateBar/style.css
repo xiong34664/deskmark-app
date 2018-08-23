@@ -1,0 +1,9 @@
+ul {
+  list-style: none;
+}
+ul>li {
+  width: 200px;
+  padding: 20px;
+  box-shadow:0 0 12px 0 #dadada;
+  margin-top: 10px;
+}
