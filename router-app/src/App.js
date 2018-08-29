@@ -46,12 +46,12 @@ class App extends Component {
           <div className="content">
           <TransitionGroup>
             <Route exact path="/" render={() => <Redirect to="/lb" />} />
-             <CSSTransition key={location.key} classNames="example" timeout={{ enter: 500, exit: 300 }} >
+             <CSSTransition key={location.key} classNames="example" timeout={{ enter: 5000, exit: 3000 }} >
               <Switch >
                 <Route exact  path="/lb"  component={Lb} />
                 <Route exact  path="/df" component={Df}/>
                 <Route exact  path="/ss" component={Ss}/>
-                <Route component={Lb}/>
+                <Route component={Content}/>
               </Switch>
             </CSSTransition>
           </TransitionGroup>

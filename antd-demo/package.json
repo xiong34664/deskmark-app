@@ -1,5 +1,5 @@
 {
-  "name": "router-app",
+  "name": "deskmark-app",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -7,11 +7,10 @@
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
     "react-router-dom": "^4.3.1",
-    "react-scripts": "1.1.5",
-    "react-transition-group": "^2.4.0"
+    "react-scripts": "1.1.4"
   },
   "scripts": {
-    "start": "set PORT=8809 &&react-scripts start",
+    "start": "set PORT=8808 &&react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
