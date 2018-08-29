@@ -10,6 +10,7 @@ import {
 import { Layout, Menu, Icon } from 'antd';
 import Buttons from './antd/Button'
 import Dropdowns from './antd/Dropdown'
+import Breadcrumbs from './antd/Breadcrumb'
 const { Header, Sider, Content } = Layout;
 class App extends Component {
   state = {
@@ -46,8 +47,11 @@ class App extends Component {
               
             </Menu.Item>
             <Menu.Item key="3">
-              <Icon type="upload" />
-              <span>nav 3</span>
+              <Link to="/breadcrumb">
+                <Icon type="upload" />
+                <span>nav 3</span>
+              </Link>
+              
             </Menu.Item>
           </Menu>
         </Sider>
@@ -62,6 +66,7 @@ class App extends Component {
           <Content style={{ margin: '24px 16px', padding: 24, background: '#fff', minHeight: 280 }}>
             <Route exact  path="/button"  component={Buttons} />
             <Route exact  path="/dropdown"  component={Dropdowns} />
+            <Route exact  path="/breadcrumb"  component={Breadcrumbs} />
           </Content>
         </Layout>
       </Layout>
